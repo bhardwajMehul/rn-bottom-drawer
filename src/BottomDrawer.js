@@ -118,7 +118,7 @@ export default class BottomDrawer extends Component {
 		 */
 		this.UP_POSITION = this._calculateUpPosition(SCREEN_HEIGHT, this.props.containerHeight, this.props.offset);
 		this.DOWN_POSITION = this._calculateDownPosition(this.UP_POSITION, this.DOWN_DISPLAY);
-		this.ALL_DOWN_POSITION = { x: 0, y: this.props.alldownDisplay };
+		this.ALL_DOWN_POSITION = this.DOWN_POSITION;
 
 		this.state = { currentPosition: this.props.startUp ? this.UP_POSITION : this.DOWN_POSITION };
 	}
